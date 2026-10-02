@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,13 +9,22 @@ export const HeaderContainer = styled.header`
   padding: 24px 48px;
 `;
 
-export const Navigation = styled.nav`
+export const Navigation = styled.nav<{ $isOpen: boolean }>`
   display: flex;
   align-items: center;
   gap: 32px;
 
   @media screen and (max-width: 768px) {
-    display: none;
+    display: ${({ $isOpen }) => ($isOpen ? "flex" : "none")};
+
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 24px;
+
+    background-color: white;
   }
 `;
 

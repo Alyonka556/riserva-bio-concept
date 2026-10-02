@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const OilContainer = styled.section`
-  padding: 80px 48px;
+  padding: 60px 48px;
 
   @media screen and (max-width: 768px) {
     padding: 60px 20px;
@@ -39,15 +39,12 @@ export const OilInfo = styled.div`
   text-align: left;
 `;
 
-export const OilProduct = styled.div`
+export const OilProduct = styled.img`
   flex: 1;
-  min-height: 300px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: #f4f1e8;
+  width: 100%;
+  max-width: 500px;
+  height: 380px;
+  object-fit: cover;
   border-radius: 8px;
 `;
 
@@ -55,6 +52,7 @@ export const OilFeatures = styled.div`
   display: flex;
   gap: 12px;
   margin-top: 24px;
+  flex-wrap: wrap;
 `;
 
 export const OilFeature = styled.span`

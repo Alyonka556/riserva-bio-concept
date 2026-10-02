@@ -1,3 +1,5 @@
+import oliveImage from "../assets/hero-olive.jpg";
+
 import {
   OilContainer,
   OilContent,
@@ -31,7 +33,10 @@ function OilSection() {
             <OilFeature>Extra Vergine</OilFeature>
           </OilFeatures>
         </OilInfo>
-        <OilProduct>Prodotto</OilProduct>
+        <OilProduct
+          src={oliveImage}
+          alt="Olio biologico La Riserva Bio"
+        ></OilProduct>
       </OilContent>
     </OilContainer>
   );

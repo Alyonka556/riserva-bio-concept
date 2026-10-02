@@ -1,19 +1,35 @@
 import styled from "styled-components";
 
-export const HeroSection = styled.section`
+export const HeroSection = styled.section<{ $backgroundImage: string }>`
   text-align: center;
-  padding: 80px 20px;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(${({ $backgroundImage }) => $backgroundImage});
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 120px 20px;
+
+  @media screen and (max-width: 768px) {
+    padding: 80px 20px;
+  }
 `;
 export const HeroTitle = styled.h1`
   font-size: 48px;
   font-weight: 600;
   margin: 0 0 16px;
+  color: white;
+
+  @media screen and (max-width: 768px) {
+    font-size: 36px;
+  }
 `;
 
 export const HeroText = styled.p`
   font-size: 18px;
   font-weight: 400;
   margin: 0;
+  color: white;
 `;
 
 export const HeroButton = styled.a`
