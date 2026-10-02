@@ -27,11 +27,11 @@ export const HeroButton = styled.a`
   text-decoration: none;
 
   color: white;
-  border-color: #667a46;
+  background-color: #667a46;
 
   transition: background-color 0.3s ease;
 
   &:hover {
-    border-color: #4f6135;
+    background-color: #4f6135;
   }
 `;

@@ -1,4 +1,10 @@
-import { HeaderContainer, Navigation, Logo, NavLink } from "./Header.styled";
+import {
+  HeaderContainer,
+  Navigation,
+  Logo,
+  NavLink,
+  MenuButton,
+} from "./Header.styled";
 
 function Header() {
   return (
@@ -13,6 +19,8 @@ function Header() {
         <NavLink href="#territorio">Territorio</NavLink>
         <NavLink href="#contatti">Contatti</NavLink>
       </Navigation>
+
+      <MenuButton aria-label="Apri menu">☰</MenuButton>
     </HeaderContainer>
   );
 }

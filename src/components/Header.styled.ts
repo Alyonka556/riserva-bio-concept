@@ -12,6 +12,10 @@ export const Navigation = styled.nav`
   display: flex;
   align-items: center;
   gap: 32px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Logo = styled.a`
@@ -28,5 +32,16 @@ export const NavLink = styled.a`
 
   &:hover {
     color: #667a46;
+  }
+`;
+
+export const MenuButton = styled.button`
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
   }
 `;
