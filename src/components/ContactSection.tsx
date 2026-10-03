@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import {
   ContactContainer,
   ContactContent,
@@ -13,18 +15,17 @@ import {
 } from "./ContactSection.styled.ts";
 
 function ContactSection() {
+  const { t } = useTranslation();
+
   return (
     <ContactContainer id="contatti">
       <ContactContent>
-        <ContactTitle>Contatti</ContactTitle>
+        <ContactTitle>{t("contact.title")}</ContactTitle>
 
-        <ContactText>
-          Vuoi conoscere meglio La Riserva Bio o ricevere informazioni sui
-          nostri prodotti?
-        </ContactText>
+        <ContactText>{t("contact.text")}</ContactText>
         <ContactDetails>
           <ContactItem>
-            <ContactLabel>Dove siamo</ContactLabel>
+            <ContactLabel>{t("contact.location")}</ContactLabel>
 
             <ContactAdress>
               Strada Le Carceri 2, 01017 Tuscania (VT)
@@ -32,16 +33,14 @@ function ContactSection() {
           </ContactItem>
 
           <ContactItem>
-            {" "}
-            <ContactLabel>Email</ContactLabel>
+            <ContactLabel>{t("contact.email")}</ContactLabel>
             <ContactEmail href="mailto:info@lariservabio.it">
               info@lariservabio.it
             </ContactEmail>
           </ContactItem>
 
           <ContactItem>
-            {" "}
-            <ContactLabel>Chiamaci</ContactLabel>
+            <ContactLabel>{t("contact.call")}</ContactLabel>
             <ContactPhone href="tel:+390761434211">
               +39 0761 434211
             </ContactPhone>
@@ -54,7 +53,7 @@ function ContactSection() {
           </ContactItem>
         </ContactDetails>
         <ContactButton href="mailto:info@lariservabio.it">
-          Contattaci
+          {t("contact.button")}
         </ContactButton>
       </ContactContent>
     </ContactContainer>

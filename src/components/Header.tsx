@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import {
   HeaderContainer,
@@ -6,10 +7,18 @@ import {
   Logo,
   NavLink,
   MenuButton,
+  LanguageSwitcher,
+  LanguageButton,
 } from "./Header.styled";
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+  const changeLanguage = (language: string) => {
+    i18n.changeLanguage(language);
+    localStorage.setItem("language", language);
+  };
+
   return (
     <HeaderContainer>
       <Logo href="/" aria-label="La Riserva Bio - Home">
@@ -17,17 +26,31 @@ function Header() {
       </Logo>
 
       <Navigation aria-label="Navigazione principale" $isOpen={isMenuOpen}>
+        <LanguageSwitcher>
+          <LanguageButton
+            $active={i18n.language === "it"}
+            onClick={() => changeLanguage("it")}
+          >
+            IT
+          </LanguageButton>
+          <LanguageButton
+            $active={i18n.language === "en"}
+            onClick={() => changeLanguage("en")}
+          >
+            EN
+          </LanguageButton>
+        </LanguageSwitcher>
         <NavLink href="#azienda" onClick={() => setIsMenuOpen(false)}>
-          Azienda
+          {t("nav.company")}
         </NavLink>
         <NavLink href="#olio" onClick={() => setIsMenuOpen(false)}>
-          Il nostro olio
+          {t("nav.oil")}
         </NavLink>
         <NavLink href="#territorio" onClick={() => setIsMenuOpen(false)}>
-          Territorio
+          {t("nav.territory")}
         </NavLink>
         <NavLink href="#contatti" onClick={() => setIsMenuOpen(false)}>
-          Contatti
+          {t("nav.contacts")}
         </NavLink>
       </Navigation>
 

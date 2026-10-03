@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import oliveImage from "../assets/hero-olive.jpg";
 
 import {
@@ -12,25 +14,19 @@ import {
 } from "./OilSection.styled";
 
 function OilSection() {
+  const { t } = useTranslation();
+
   return (
     <OilContainer id="olio">
       <OilContent>
-        {" "}
         <OilInfo>
-          {" "}
-          <OilTitle>Il nostro olio</OilTitle>
-          <OilText>
-            Olio Extra Vergine di Oliva Biologico, prodotto nel territorio di
-            Tuscania.
-          </OilText>
-          <OilText>
-            Un olio biologico che nasce dagli ulivi del territorio di Tuscania,
-            nel cuore della Tuscia.
-          </OilText>
+          <OilTitle>{t("oil.title")}</OilTitle>
+          <OilText>{t("oil.text1")}</OilText>
+          <OilText>{t("oil.text2")}</OilText>
           <OilFeatures>
-            <OilFeature>100% Biologico</OilFeature>
-            <OilFeature>Tuscania</OilFeature>
-            <OilFeature>Extra Vergine</OilFeature>
+            <OilFeature>{t("oil.organic")}</OilFeature>
+            <OilFeature>{t("oil.tuscania")}</OilFeature>
+            <OilFeature>{t("oil.extraVirgin")}</OilFeature>
           </OilFeatures>
         </OilInfo>
         <OilProduct

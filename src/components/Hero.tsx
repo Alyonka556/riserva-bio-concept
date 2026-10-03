@@ -1,14 +1,16 @@
 import heroHarvest from "../assets/hero-harvest.jpg";
+import { useTranslation } from "react-i18next";
 
 import { HeroSection, HeroTitle, HeroText, HeroButton } from "./Hero.styled";
 
 function Hero() {
+  const { t } = useTranslation();
   return (
     <HeroSection $backgroundImage={heroHarvest}>
-      <HeroTitle>La Riserva Bio</HeroTitle>
-      <HeroText>Olio Biologico italiano, dalla terra alla tavola</HeroText>
+      <HeroTitle>{t("hero.title")}</HeroTitle>
+      <HeroText>{t("hero.subtitle")}</HeroText>
 
-      <HeroButton href="#olio">Scopri il nostro olio</HeroButton>
+      <HeroButton href="#olio">{t("hero.button")}</HeroButton>
     </HeroSection>
   );
 }

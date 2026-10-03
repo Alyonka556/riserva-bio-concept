@@ -56,3 +56,23 @@ export const MenuButton = styled.button`
     cursor: pointer;
   }
 `;
+
+export const LanguageSwitcher = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 4px;
+`;
+
+export const LanguageButton = styled.button<{ $active: boolean }>`
+  padding: 4px 6px;
+  border: none;
+  background: transparent;
+  color: ${({ $active }) => ($active ? "#556b2f" : "#777")};
+  font-size: 13px;
+  font-weight: ${({ $active }) => ($active ? "700" : "500")};
+  cursor: pointer;
+
+  &:hover {
+    color: #556b2f;
+  }
+`;

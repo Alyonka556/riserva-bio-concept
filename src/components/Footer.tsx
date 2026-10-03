@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import {
   FooterContainer,
   FooterContent,
@@ -6,14 +8,14 @@ import {
 } from "./Footer.styled";
 
 function Footer() {
+  const { t } = useTranslation();
+
   return (
     <FooterContainer>
       <FooterContent>
         <FooterLogo>La Riserva Bio</FooterLogo>
 
-        <FooterText>
-          Olio Extra Vergine di Oliva Biologico - Tuscania
-        </FooterText>
+        <FooterText>{t("footer.text")}</FooterText>
       </FooterContent>
     </FooterContainer>
   );

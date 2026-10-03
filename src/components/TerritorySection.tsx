@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import territoryOlive from "../assets/territory-olive.png";
 
 import {
@@ -10,16 +12,14 @@ import {
 } from "./TerritorySection.styled";
 
 function TerritorySection() {
+  const { t } = useTranslation();
+
   return (
     <TerritoryContainer id="territorio">
       <TerritoryContent>
         <TerritoryInfo>
-          <TerritoryTitle>Il territorio</TerritoryTitle>
-          <TerritoryText>
-            Nel cuore della Tuscia, il territorio di Tuscania offre un ambiente
-            ideale per la coltivazione degli ulivi e la produzione di olio extra
-            vergine di oliva biologico.
-          </TerritoryText>{" "}
+          <TerritoryTitle>{t("territory.title")}</TerritoryTitle>
+          <TerritoryText>{t("territory.text")}</TerritoryText>
         </TerritoryInfo>
         <TerritoryImage
           src={territoryOlive}
