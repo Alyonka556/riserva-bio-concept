@@ -26,9 +26,11 @@ export const HeroTitle = styled.h1`
 `;
 
 export const HeroText = styled.p`
+  max-width: 700px;
+  margin: 0 auto;
   font-size: 18px;
   font-weight: 400;
-  margin: 0;
+  line-height: 1.6;
   color: white;
 `;
 
@@ -49,5 +51,10 @@ export const HeroButton = styled.a`
 
   &:hover {
     background-color: #4f6135;
+  }
+
+  &:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 3px;
   }
 `;

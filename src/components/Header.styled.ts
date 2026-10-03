@@ -22,6 +22,7 @@ export const Navigation = styled.nav<{ $isOpen: boolean }>`
     position: absolute;
     top: 100%;
     left: 0;
+    z-index: 100;
     width: 100%;
     padding: 24px;
 
@@ -44,16 +45,31 @@ export const NavLink = styled.a`
   &:hover {
     color: #667a46;
   }
+
+  &:focus-visible {
+    outline: 2px solid #667a46;
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
 `;
 
 export const MenuButton = styled.button`
   display: none;
+  border: none;
+  padding: 4px 8px;
+  background: transparent;
+  color: #1f2d1f;
 
   @media screen and (max-width: 768px) {
     display: block;
-    background: none;
     font-size: 28px;
     cursor: pointer;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #556b2f;
+    outline-offset: 3px;
+    border-radius: 2px;
   }
 `;
 
@@ -74,5 +90,11 @@ export const LanguageButton = styled.button<{ $active: boolean }>`
 
   &:hover {
     color: #556b2f;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #556b2f;
+    outline-offset: 2px;
+    border-radius: 2px;
   }
 `;
