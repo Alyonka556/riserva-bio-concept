@@ -39,6 +39,18 @@ function Header() {
           >
             EN
           </LanguageButton>
+          <LanguageButton
+            $active={i18n.language === "de"}
+            onClick={() => changeLanguage("de")}
+          >
+            DE
+          </LanguageButton>
+          <LanguageButton
+            $active={i18n.language === "fr"}
+            onClick={() => changeLanguage("fr")}
+          >
+            FR
+          </LanguageButton>
         </LanguageSwitcher>
         <NavLink href="#azienda" onClick={() => setIsMenuOpen(false)}>
           {t("nav.company")}

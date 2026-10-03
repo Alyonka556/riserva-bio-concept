@@ -92,6 +92,108 @@ i18n.use(initReactI18next).init({
         },
       },
     },
+    de: {
+      translation: {
+        hero: {
+          title: "La Riserva Bio",
+          subtitle:
+            "Italienisches Bio-Olivenöl, vom Land direkt auf Ihren Tisch.",
+          button: "Unser Olivenöl entdecken",
+        },
+
+        nav: {
+          company: "Unternehmen",
+          oil: "Unser Olivenöl",
+          territory: "Region",
+          contacts: "Kontakt",
+        },
+
+        oil: {
+          title: "Unser Olivenöl",
+          text1:
+            "Bio-Olivenöl Extra Vergine, hergestellt in der Region Tuscania.",
+          text2:
+            "Ein biologisches Olivenöl aus den Olivenhainen von Tuscania, im Herzen der Tuscia.",
+          organic: "100 % Bio",
+          tuscania: "Tuscania",
+          extraVirgin: "Extra Vergine",
+        },
+
+        contact: {
+          title: "Kontakt",
+          text: "Möchten Sie mehr über La Riserva Bio erfahren oder Informationen zu unseren Produkten erhalten?",
+          location: "Wo Sie uns finden",
+          email: "E-Mail",
+          call: "Rufen Sie uns an",
+          button: "Kontaktieren Sie uns",
+        },
+
+        company: {
+          title: "Unser Unternehmen",
+          text: "La Riserva Bio entstand in Tuscania, im Herzen der Tuscia, aus der Leidenschaft für das Land und die Herstellung von biologischem Olivenöl Extra Vergine.",
+        },
+
+        territory: {
+          title: "Die Region",
+          text: "Im Herzen der Tuscia bietet die Region Tuscania ideale Bedingungen für den Olivenanbau und die Herstellung von biologischem Olivenöl Extra Vergine.",
+        },
+
+        footer: {
+          text: "Bio-Olivenöl Extra Vergine - Tuscania",
+        },
+      },
+    },
+    fr: {
+      translation: {
+        hero: {
+          title: "La Riserva Bio",
+          subtitle:
+            "Huile d’olive biologique italienne, de la terre à votre table.",
+          button: "Découvrir notre huile d’olive",
+        },
+
+        nav: {
+          company: "Notre entreprise",
+          oil: "Notre huile",
+          territory: "Territoire",
+          contacts: "Contacts",
+        },
+
+        oil: {
+          title: "Notre huile d’olive",
+          text1:
+            "Huile d’olive extra vierge biologique, produite sur le territoire de Tuscania.",
+          text2:
+            "Une huile d’olive biologique issue des oliveraies de Tuscania, au cœur de la Tuscia.",
+          organic: "100 % Biologique",
+          tuscania: "Tuscania",
+          extraVirgin: "Extra vierge",
+        },
+
+        contact: {
+          title: "Contacts",
+          text: "Vous souhaitez en savoir plus sur La Riserva Bio ou obtenir des informations sur nos produits ?",
+          location: "Où nous trouver",
+          email: "E-mail",
+          call: "Appelez-nous",
+          button: "Contactez-nous",
+        },
+
+        company: {
+          title: "Notre entreprise",
+          text: "La Riserva Bio est née à Tuscania, au cœur de la Tuscia, de la passion pour la terre et la production d’huile d’olive extra vierge biologique.",
+        },
+
+        territory: {
+          title: "Le territoire",
+          text: "Au cœur de la Tuscia, le territoire de Tuscania offre des conditions idéales pour la culture des oliviers et la production d’huile d’olive extra vierge biologique.",
+        },
+
+        footer: {
+          text: "Huile d’olive extra vierge biologique - Tuscania",
+        },
+      },
+    },
   },
 
   lng: localStorage.getItem("language") || "it",
