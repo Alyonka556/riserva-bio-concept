@@ -1,14 +1,14 @@
 import styled from "styled-components";
 
-export const CompanyContainer = styled.section`
+export const TerritoryContainer = styled.section`
   padding: 60px 48px;
 
   @media screen and (max-width: 768px) {
-    padding: 40px 20px;
+    padding: 40px 20px 60px;
   }
 `;
 
-export const CompanyContent = styled.div`
+export const TerritoryContent = styled.div`
   display: flex;
   align-items: center;
   gap: 60px;
@@ -21,12 +21,26 @@ export const CompanyContent = styled.div`
   }
 `;
 
-export const CompanyInfo = styled.div`
+export const TerritoryInfo = styled.div`
   flex: 1;
   text-align: left;
 `;
 
-export const CompanyImage = styled.img`
+export const TerritoryTitle = styled.h2`
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 0 24px;
+  color: #1f2a1f;
+`;
+
+export const TerritoryText = styled.p`
+  font-size: 18px;
+  line-height: 1.7;
+  margin: 0;
+  color: #555;
+`;
+
+export const TerritoryImage = styled.img`
   flex: 1;
   width: 100%;
   max-width: 500px;
@@ -37,19 +51,4 @@ export const CompanyImage = styled.img`
   @media screen and (max-width: 768px) {
     height: 280px;
   }
-`;
-
-export const CompanyTitle = styled.h2`
-  font-size: 36px;
-  font-weight: 600;
-  margin: 0 0 24px;
-  color: #1f2a1f;
-`;
-
-export const CompanyText = styled.p`
-  max-width: 700px;
-  font-size: 18px;
-  line-height: 1.7;
-  margin: 0;
-  color: #555;
 `;

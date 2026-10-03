@@ -1,9 +1,31 @@
-import { CompanyContainer } from "./CompanySection.styled";
+import companyOlive from "../assets/company-olive.jpg";
+
+import {
+  CompanyContainer,
+  CompanyContent,
+  CompanyTitle,
+  CompanyText,
+  CompanyInfo,
+  CompanyImage,
+} from "./CompanySection.styled";
 
 function CompanySection() {
   return (
     <CompanyContainer id="azienda">
-      <h2>La nostra azienda</h2>
+      <CompanyContent>
+        <CompanyInfo>
+          <CompanyTitle>La nostra azienda</CompanyTitle>
+          <CompanyText>
+            La Riserva Bio nasce a Tuscania, nel cuore della Tuscia, dalla
+            passione per la terra e per la produzione di olio extra vergine di
+            oliva biologico.
+          </CompanyText>
+        </CompanyInfo>
+        <CompanyImage
+          src={companyOlive}
+          alt="Racolta delle olive La Riserva Bio"
+        ></CompanyImage>
+      </CompanyContent>
     </CompanyContainer>
   );
 }
