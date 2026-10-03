@@ -4,6 +4,8 @@ import {
   ContactTitle,
   ContactText,
   ContactDetails,
+  ContactItem,
+  ContactLabel,
   ContactAdress,
   ContactEmail,
   ContactPhone,
@@ -21,21 +23,35 @@ function ContactSection() {
           nostri prodotti?
         </ContactText>
         <ContactDetails>
-          <ContactAdress>
-            Strada Le Carceri 2, 01017 Tuscania (VT)
-          </ContactAdress>
+          <ContactItem>
+            <ContactLabel>Dove siamo</ContactLabel>
 
-          <ContactEmail href="mailto:info@lariservabio.it">
-            info@lariservabio.it
-          </ContactEmail>
-          <ContactPhone href="tel:+390761434211">+39 0761 434211</ContactPhone>
-          <ContactPhone href="tel:+393296123052">
-            +39 329 61 23 052
-          </ContactPhone>
+            <ContactAdress>
+              Strada Le Carceri 2, 01017 Tuscania (VT)
+            </ContactAdress>
+          </ContactItem>
 
-          <ContactPhone href="tel:+393294842774">
-            +39 329 48 42 774
-          </ContactPhone>
+          <ContactItem>
+            {" "}
+            <ContactLabel>Email</ContactLabel>
+            <ContactEmail href="mailto:info@lariservabio.it">
+              info@lariservabio.it
+            </ContactEmail>
+          </ContactItem>
+
+          <ContactItem>
+            {" "}
+            <ContactLabel>Chiamaci</ContactLabel>
+            <ContactPhone href="tel:+390761434211">
+              +39 0761 434211
+            </ContactPhone>
+            <ContactPhone href="tel:+393296123052">
+              +39 329 61 23 052
+            </ContactPhone>
+            <ContactPhone href="tel:+393294842774">
+              +39 329 48 42 774
+            </ContactPhone>
+          </ContactItem>
         </ContactDetails>
         <ContactButton href="mailto:info@lariservabio.it">
           Contattaci

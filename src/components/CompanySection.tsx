@@ -13,6 +13,10 @@ function CompanySection() {
   return (
     <CompanyContainer id="azienda">
       <CompanyContent>
+        <CompanyImage
+          src={companyOlive}
+          alt="Racolta delle olive La Riserva Bio"
+        ></CompanyImage>
         <CompanyInfo>
           <CompanyTitle>La nostra azienda</CompanyTitle>
           <CompanyText>
@@ -21,10 +25,6 @@ function CompanySection() {
             oliva biologico.
           </CompanyText>
         </CompanyInfo>
-        <CompanyImage
-          src={companyOlive}
-          alt="Racolta delle olive La Riserva Bio"
-        ></CompanyImage>
       </CompanyContent>
     </CompanyContainer>
   );

@@ -18,6 +18,7 @@ export const Navigation = styled.nav<{ $isOpen: boolean }>`
     display: ${({ $isOpen }) => ($isOpen ? "flex" : "none")};
 
     flex-direction: column;
+    gap: 18px;
     position: absolute;
     top: 100%;
     left: 0;

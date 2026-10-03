@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const ContactContainer = styled.section`
-  padding: 80px 48px;
-  background-color: #f4f1e8;
+  padding: 60px 48px;
+  background-color: #faf8f2;
 
   @media screen and (max-width: 768px) {
     padding: 60px 20px;
@@ -19,7 +19,7 @@ export const ContactTitle = styled.h2`
   font-size: 36px;
   font-weight: 600;
   margin: 0 0 24px;
-  color: 1f2a1f;
+  color: #1f2a1f;
 `;
 
 export const ContactText = styled.p`
@@ -31,7 +31,36 @@ export const ContactText = styled.p`
 `;
 
 export const ContactDetails = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
   margin-top: 32px;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+`;
+
+export const ContactItem = styled.div`
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+export const ContactLabel = styled.strong`
+  display: block;
+  margin-top: 24px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  color: #1f2a1f;
 `;
 
 export const ContactAdress = styled.p`
@@ -39,12 +68,16 @@ export const ContactAdress = styled.p`
   font-size: 17px;
   line-height: 1.6;
   color: #555;
+
+  @media screen and (max-width: 768px) {
+    max-width: 280px;
+    overflow-wrap: break-word;
+  }
 `;
 
 export const ContactEmail = styled.a`
   display: block;
-  width: fit-content;
-  margin: 20px auto 0;
+  margin: 0;
   color: #556b2f;
   font-size: 17px;
   font-weight: 600;
@@ -58,7 +91,7 @@ export const ContactEmail = styled.a`
 export const ContactPhone = styled.a`
   display: block;
   width: fit-content;
-  margin: 12px auto 0;
+  margin: 0 auto 12px;
   color: #556b2f;
   font-size: 17px;
   font-weight: 600;

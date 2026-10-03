@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const CompanyContainer = styled.section`
   padding: 60px 48px;
+  background-color: #f2f4ec;
 
   @media screen and (max-width: 768px) {
     padding: 40px 20px;
@@ -44,6 +45,10 @@ export const CompanyTitle = styled.h2`
   font-weight: 600;
   margin: 0 0 24px;
   color: #1f2a1f;
+
+  @media screen and (max-width: 480px) {
+    font-size: 30px;
+  }
 `;
 
 export const CompanyText = styled.p`

@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import OilSection from "./components/OilSection";
 import TerritorySection from "./components/TerritorySection";
 import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <TerritorySection />
         <ContactSection />
       </main>
+
+      <Footer />
     </>
   );
 }
