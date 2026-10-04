@@ -20,6 +20,10 @@ export const ContactTitle = styled.h2`
   font-weight: 600;
   margin: 0 0 24px;
   color: #1f2a1f;
+
+  @media screen and (max-width: 480px) {
+    font-size: 30px;
+  }
 `;
 
 export const ContactText = styled.p`
@@ -63,7 +67,7 @@ export const ContactLabel = styled.strong`
   color: #1f2a1f;
 `;
 
-export const ContactAdress = styled.p`
+export const ContactAddress = styled.p`
   margin: 0;
   font-size: 17px;
   line-height: 1.6;
@@ -82,6 +86,12 @@ export const ContactEmail = styled.a`
   font-size: 17px;
   font-weight: 600;
   text-decoration: none;
+
+  &:focus-visible {
+    outline: 2px solid #556b2f;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
 
   &:hover {
     text-decoration: underline;
@@ -116,5 +126,10 @@ export const ContactButton = styled.a`
 
   &:hover {
     background-color: #3f5222;
+  }
+
+  &:focus-visible {
+    outline: 3px solid #556b2f;
+    outline-offset: 3px;
   }
 `;

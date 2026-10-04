@@ -8,7 +8,7 @@ import {
   ContactDetails,
   ContactItem,
   ContactLabel,
-  ContactAdress,
+  ContactAddress,
   ContactEmail,
   ContactPhone,
   ContactButton,
@@ -27,9 +27,9 @@ function ContactSection() {
           <ContactItem>
             <ContactLabel>{t("contact.location")}</ContactLabel>
 
-            <ContactAdress>
+            <ContactAddress>
               Strada Le Carceri 2, 01017 Tuscania (VT)
-            </ContactAdress>
+            </ContactAddress>
           </ContactItem>
 
           <ContactItem>

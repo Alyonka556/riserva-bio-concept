@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const TerritoryContainer = styled.section`
   padding: 60px 48px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     padding: 40px 20px 60px;
   }
 `;
@@ -15,7 +15,7 @@ export const TerritoryContent = styled.div`
   max-width: 1200px;
   margin: 0 auto;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     flex-direction: column;
     gap: 40px;
   }
@@ -31,6 +31,10 @@ export const TerritoryTitle = styled.h2`
   font-weight: 600;
   margin: 0 0 24px;
   color: #1f2a1f;
+
+  @media screen and (max-width: 480px) {
+    font-size: 30px;
+  }
 `;
 
 export const TerritoryText = styled.p`
@@ -48,7 +52,7 @@ export const TerritoryImage = styled.img`
   object-fit: cover;
   border-radius: 8px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     height: 280px;
   }
 `;

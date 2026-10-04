@@ -18,13 +18,13 @@ export const Navigation = styled.nav<{ $isOpen: boolean }>`
     display: ${({ $isOpen }) => ($isOpen ? "flex" : "none")};
 
     flex-direction: column;
-    gap: 18px;
+    gap: 14px;
     position: absolute;
     top: 100%;
     left: 0;
     z-index: 100;
     width: 100%;
-    padding: 24px;
+    padding: 18px 24px;
 
     background-color: white;
   }

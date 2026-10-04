@@ -4,7 +4,7 @@ export const CompanyContainer = styled.section`
   padding: 60px 48px;
   background-color: #f2f4ec;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     padding: 40px 20px;
   }
 `;
@@ -16,7 +16,7 @@ export const CompanyContent = styled.div`
   max-width: 1200px;
   margin: 0 auto;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     flex-direction: column;
     gap: 40px;
   }
@@ -35,7 +35,7 @@ export const CompanyImage = styled.img`
   object-fit: cover;
   border-radius: 8px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     height: 280px;
   }
 `;
