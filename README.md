@@ -1,75 +1,102 @@
-# React + TypeScript + Vite
+# La Riserva Bio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive multilingual website concept for an Italian organic extra virgin olive oil producer based in Tuscania, Italy.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://alyonka556.github.io/riserva-bio-concept/
 
-## React Compiler
+## About the Project
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+La Riserva Bio is a front-end concept website created to present an Italian organic olive oil brand in a modern and elegant way.
 
-## Expanding the ESLint configuration
+The project focuses on responsive design, multilingual support, accessibility, and a clean user experience across desktop and mobile devices.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Features
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Responsive design for desktop, tablet, and mobile
+- Multilingual interface: Italian, English, German, and French
+- Language preference saved in localStorage
+- Mobile navigation menu
+- Accessible keyboard focus states
+- Semantic HTML structure
+- Smooth responsive layouts and optimized content sections
+- Automatic deployment with GitHub Pages
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- React
+- TypeScript
+- Vite
+- styled-components
+- i18next
+- react-i18next
+- HTML5
+- CSS3
+- Git & GitHub
+- GitHub Actions
+- GitHub Pages
 
+## Project Structure
+
+```text
+src/
+├── assets/
+├── components/
+│   ├── Header.tsx
+│   ├── Header.styled.ts
+│   ├── Hero.tsx
+│   ├── Hero.styled.ts
+│   ├── OilSection.tsx
+│   ├── CompanySection.tsx
+│   ├── TerritorySection.tsx
+│   ├── ContactSection.tsx
+│   └── Footer.tsx
+├── App.tsx
+├── main.tsx
+└── i18n.ts
+```
+## Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/Alyonka556/riserva-bio-concept.git
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Go to the project directory:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+cd riserva-bio-concept
 ```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+## What I Learned
+
+During this project, I practiced and improved:
+
+- Building reusable React components with TypeScript
+- Styling components with styled-components
+- Creating responsive layouts for different screen sizes
+- Implementing multilingual support with i18next
+- Managing language preferences with localStorage
+- Improving keyboard accessibility and focus states
+- Using Git and GitHub for version control
+- Setting up automatic deployment with GitHub Actions and GitHub Pages
+
+## Author
+
+Olena Kotchenko
+
+Front-End Developer
