@@ -14,7 +14,7 @@ export const Navigation = styled.nav<{ $isOpen: boolean }>`
   align-items: center;
   gap: 32px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     display: ${({ $isOpen }) => ($isOpen ? "flex" : "none")};
 
     flex-direction: column;
@@ -60,7 +60,7 @@ export const MenuButton = styled.button`
   background: transparent;
   color: #1f2d1f;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 1024px) {
     display: block;
     font-size: 28px;
     cursor: pointer;

@@ -56,6 +56,7 @@ src/
 ├── main.tsx
 └── i18n.ts
 ```
+
 ## Getting Started
 
 Clone the repository:
