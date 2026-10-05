@@ -14,6 +14,7 @@ i18n.use(initReactI18next).init({
           company: "Azienda",
           oil: "Il nostro olio",
           territory: "Territorio",
+          awards: "Riconoscimenti",
           contacts: "Contatti",
         },
         oil: {
@@ -46,8 +47,19 @@ i18n.use(initReactI18next).init({
           title: "Il territorio",
           text: "Nel cuore della Tuscia, il territorio di Tuscania offre un ambiente ideale per la coltivazione degli ulivi e la produzione di olio extra vergine di oliva biologico.",
         },
+
         footer: {
           text: "Olio Extra Vergine di Oliva Biologico - Tuscania",
+        },
+        awards: {
+          eyebrow: "Qualità riconosciuta",
+          title: "Riconoscimenti e progetti",
+          intro:
+            "Un percorso dedicato alla qualità, al territorio e alla valorizzazione dell’olio extra vergine di oliva biologico.",
+          firstPrize: "Primo premio",
+          historyTitle: "I riconoscimenti nel tempo",
+          secondPrize: "Secondo premio",
+          internationalCompetition: "Concorso internazionale",
         },
       },
     },
@@ -63,6 +75,7 @@ i18n.use(initReactI18next).init({
           company: "Company",
           oil: "Our oil",
           territory: "Territory",
+          awards: "Awards",
           contacts: "Contacts",
         },
         oil: {
@@ -98,6 +111,16 @@ i18n.use(initReactI18next).init({
         footer: {
           text: "Organic Extra Virgin Olive Oil - Tuscania",
         },
+        awards: {
+          eyebrow: "Recognised quality",
+          title: "Awards & Projects",
+          intro:
+            "A journey dedicated to quality, the local territory and the promotion of organic extra virgin olive oil.",
+          firstPrize: "First prize",
+          historyTitle: "Awards through the years",
+          secondPrize: "Second prize",
+          internationalCompetition: "International competition",
+        },
       },
     },
     de: {
@@ -113,6 +136,7 @@ i18n.use(initReactI18next).init({
           company: "Unternehmen",
           oil: "Unser Olivenöl",
           territory: "Region",
+          awards: "Auszeichnungen",
           contacts: "Kontakt",
         },
 
@@ -154,6 +178,16 @@ i18n.use(initReactI18next).init({
         footer: {
           text: "Bio-Olivenöl Extra Vergine - Tuscania",
         },
+        awards: {
+          eyebrow: "Anerkannte Qualität",
+          title: "Auszeichnungen & Projekte",
+          intro:
+            "Ein Weg im Zeichen von Qualität, regionaler Verbundenheit und der Wertschätzung von biologischem nativem Olivenöl extra.",
+          firstPrize: "Erster Preis",
+          historyTitle: "Auszeichnungen im Laufe der Jahre",
+          secondPrize: "Zweiter Preis",
+          internationalCompetition: "Internationaler Wettbewerb",
+        },
       },
     },
     fr: {
@@ -169,6 +203,7 @@ i18n.use(initReactI18next).init({
           company: "Notre entreprise",
           oil: "Notre huile",
           territory: "Territoire",
+          awards: "Distinctions",
           contacts: "Contacts",
         },
 
@@ -208,6 +243,16 @@ i18n.use(initReactI18next).init({
 
         footer: {
           text: "Huile d’olive extra vierge biologique - Tuscania",
+        },
+        awards: {
+          eyebrow: "Une qualité reconnue",
+          title: "Distinctions & Projets",
+          intro:
+            "Un parcours consacré à la qualité, au territoire et à la valorisation de l’huile d’olive extra vierge biologique.",
+          firstPrize: "Premier prix",
+          historyTitle: "Les distinctions au fil des années",
+          secondPrize: "Deuxième prix",
+          internationalCompetition: "Concours international",
         },
       },
     },

@@ -6,10 +6,10 @@ import {
   Navigation,
   Logo,
   LogoImage,
-  NavLink,
   MenuButton,
   LanguageSwitcher,
   LanguageButton,
+  RouterNavLink,
 } from "./Header.styled";
 
 function Header() {
@@ -23,7 +23,7 @@ function Header() {
 
   return (
     <HeaderContainer>
-      <Logo href="/" aria-label="La Riserva Bio - Home">
+      <Logo to="/" aria-label="La Riserva Bio - Home">
         <LogoImage
           src={`${import.meta.env.BASE_URL}favicon-olive.svg`}
           alt=""
@@ -58,18 +58,24 @@ function Header() {
             FR
           </LanguageButton>
         </LanguageSwitcher>
-        <NavLink href="#azienda" onClick={() => setIsMenuOpen(false)}>
+        <RouterNavLink to="/#azienda" onClick={() => setIsMenuOpen(false)}>
           {t("nav.company")}
-        </NavLink>
-        <NavLink href="#olio" onClick={() => setIsMenuOpen(false)}>
+        </RouterNavLink>
+        <RouterNavLink to="/#olio" onClick={() => setIsMenuOpen(false)}>
           {t("nav.oil")}
-        </NavLink>
-        <NavLink href="#territorio" onClick={() => setIsMenuOpen(false)}>
+        </RouterNavLink>
+        <RouterNavLink to="/#territorio" onClick={() => setIsMenuOpen(false)}>
           {t("nav.territory")}
-        </NavLink>
-        <NavLink href="#contatti" onClick={() => setIsMenuOpen(false)}>
+        </RouterNavLink>
+        <RouterNavLink
+          to="/riconoscimenti"
+          onClick={() => setIsMenuOpen(false)}
+        >
+          {t("nav.awards")}
+        </RouterNavLink>
+        <RouterNavLink to="/#contatti" onClick={() => setIsMenuOpen(false)}>
           {t("nav.contacts")}
-        </NavLink>
+        </RouterNavLink>
       </Navigation>
 
       <MenuButton

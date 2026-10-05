@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
@@ -36,7 +37,7 @@ export const Navigation = styled.nav<{ $isOpen: boolean }>`
   }
 `;
 
-export const Logo = styled.a`
+export const Logo = styled(Link)`
   display: flex;
   align-items: center;
   gap: 4px;
@@ -71,6 +72,20 @@ export const NavLink = styled.a`
     color: #667a46;
   }
 
+  &:focus-visible {
+    outline: 2px solid #667a46;
+    outline-offset: 4px;
+    border-radius: 2px;
+  }
+`;
+
+export const RouterNavLink = styled(Link)`
+  font-size: 16px;
+  text-decoration: none;
+  color: #333;
+  &:hover {
+    color: #667a46;
+  }
   &:focus-visible {
     outline: 2px solid #667a46;
     outline-offset: 4px;

@@ -1,23 +1,22 @@
 import "./App.css";
-import CompanySection from "./components/CompanySection";
+import { Routes, Route } from "react-router-dom";
+
 import Header from "./components/Header";
-import Hero from "./components/Hero";
-import OilSection from "./components/OilSection";
-import TerritorySection from "./components/TerritorySection";
-import ContactSection from "./components/ContactSection";
 import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
+import RiconoscimentiPage from "./pages/RiconoscimentiPage";
+import ScrollToHash from "./components/ScrollToHash";
 
 function App() {
   return (
     <>
+      <ScrollToHash />
       <Header />
-      <main>
-        <Hero />
-        <OilSection />
-        <CompanySection />
-        <TerritorySection />
-        <ContactSection />
-      </main>
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/riconoscimenti" element={<RiconoscimentiPage />} />
+      </Routes>
 
       <Footer />
     </>
