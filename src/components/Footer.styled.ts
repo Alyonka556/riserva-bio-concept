@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
   padding: 32px 48px;
-  background-color: #46552f;
+  background-color: #2f3b24;
   color: white;
 
   @media screen and (max-width: 768px) {

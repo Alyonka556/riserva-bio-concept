@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-import oliveImage from "../assets/hero-olive.jpg";
+import oliveImage from "../assets/hero-olive.webp";
 
 import {
   OilContainer,

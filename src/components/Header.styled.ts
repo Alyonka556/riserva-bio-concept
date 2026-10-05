@@ -8,6 +8,7 @@ export const HeaderContainer = styled.header`
   align-items: center;
   gap: 32px;
   padding: 24px 48px;
+  background-color: #faf8f2;
 
   @media screen and (max-width: 480px) {
     padding: 20px 24px;
@@ -31,6 +32,7 @@ export const Navigation = styled.nav<{ $isOpen: boolean }>`
   display: flex;
   align-items: center;
   gap: 32px;
+  background-color: #faf8f2;
 
   @media screen and (max-width: 1024px) {
     display: ${({ $isOpen }) => ($isOpen ? "flex" : "none")};
@@ -44,7 +46,6 @@ export const Navigation = styled.nav<{ $isOpen: boolean }>`
     width: 100%;
     padding: 12px 24px 16px;
 
-    background-color: white;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   }
 `;

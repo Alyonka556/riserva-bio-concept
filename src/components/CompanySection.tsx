@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import companyOlive from "../assets/company-olive.jpg";
+import companyOlive from "../assets/company-olive.webp";
 
 import {
   CompanyContainer,

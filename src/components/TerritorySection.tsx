@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-import territoryOlive from "../assets/territory-olive.png";
+import territoryOlive from "../assets/territory.webp";
 
 import {
   TerritoryContainer,

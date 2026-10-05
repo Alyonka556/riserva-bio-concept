@@ -1,4 +1,4 @@
-import heroHarvest from "../assets/hero-harvest.jpg";
+import heroHarvest from "../assets/hero-harvest.webp";
 import { useTranslation } from "react-i18next";
 
 import { HeroSection, HeroTitle, HeroText, HeroButton } from "./Hero.styled";
