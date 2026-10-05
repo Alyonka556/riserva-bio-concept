@@ -15,6 +15,18 @@ export const HeaderContainer = styled.header`
   }
 `;
 
+export const MenuOverlay = styled.div`
+  display: none;
+
+  @media screen and (max-width: 1024px) {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 90;
+    background: rgba(0, 0, 0, 0.08);
+  }
+`;
+
 export const Navigation = styled.nav<{ $isOpen: boolean }>`
   display: flex;
   align-items: center;

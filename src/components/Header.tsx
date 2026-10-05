@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 
 import {
   HeaderContainer,
+  MenuOverlay,
   Navigation,
   Logo,
   LogoImage,
@@ -23,14 +24,18 @@ function Header() {
 
   return (
     <HeaderContainer>
-      <Logo to="/" aria-label="La Riserva Bio - Home">
+      <Logo
+        to="/"
+        aria-label="La Riserva Bio - Home"
+        onClick={() => setIsMenuOpen(false)}
+      >
         <LogoImage
           src={`${import.meta.env.BASE_URL}favicon-olive.svg`}
           alt=""
         />
         La Riserva Bio
       </Logo>
-
+      {isMenuOpen && <MenuOverlay onClick={() => setIsMenuOpen(false)} />}
       <Navigation aria-label="Navigazione principale" $isOpen={isMenuOpen}>
         <LanguageSwitcher>
           <LanguageButton
