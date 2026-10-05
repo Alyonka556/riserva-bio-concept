@@ -24,7 +24,10 @@ function Header() {
   return (
     <HeaderContainer>
       <Logo href="/" aria-label="La Riserva Bio - Home">
-        <LogoImage src="./public/favicon-olive.svg" alt="" />
+        <LogoImage
+          src={`${import.meta.env.BASE_URL}favicon-olive.svg`}
+          alt=""
+        />
         La Riserva Bio
       </Logo>
 
