@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { useForm, ValidationError } from "@formspree/react";
 
 import {
   ContactContainer,
@@ -11,11 +12,18 @@ import {
   ContactAddress,
   ContactEmail,
   ContactPhone,
-  ContactButton,
+  ContactForm,
+  FormInput,
+  FormTextarea,
+  FormButton,
+  FormLabel,
+  SuccessMessage,
 } from "./ContactSection.styled.ts";
 
 function ContactSection() {
   const { t } = useTranslation();
+
+  const [state, handleSubmit] = useForm("xljgrzzk");
 
   return (
     <ContactContainer id="contatti">
@@ -52,12 +60,63 @@ function ContactSection() {
             </ContactPhone>
           </ContactItem>
         </ContactDetails>
-        <ContactButton href="mailto:info@lariservabio.it">
-          {t("contact.button")}
-        </ContactButton>
+        {state.succeeded ? (
+          <SuccessMessage>{t("contact.success")}</SuccessMessage>
+        ) : (
+          <ContactForm onSubmit={handleSubmit}>
+            <FormLabel htmlFor="name">{t("contact.name")}</FormLabel>
+            <FormInput
+              id="name"
+              name="name"
+              type="text"
+              autoComplete="name"
+              placeholder={t("contact.name")}
+              required
+            />
+            <ValidationError
+              prefix={t("contact.name")}
+              field="name"
+              errors={state.errors}
+            />
+
+            <FormLabel htmlFor="email">{t("contact.email")}</FormLabel>
+            <FormInput
+              id="email"
+              name="email"
+              type="email"
+              autoComplete="email"
+              placeholder={t("contact.email")}
+              required
+            />
+
+            <ValidationError
+              prefix={t("contact.email")}
+              field="email"
+              errors={state.errors}
+            />
+
+            <FormLabel htmlFor="message">{t("contact.message")}</FormLabel>
+            <FormTextarea
+              id="message"
+              name="message"
+              placeholder={t("contact.message")}
+              required
+            />
+            <ValidationError
+              prefix={t("contact.message")}
+              field="messagio"
+              errors={state.errors}
+            />
+
+            <ValidationError errors={state.errors} />
+
+            <FormButton type="submit" disabled={state.submitting}>
+              {state.submitting ? "..." : t("contact.submit")}
+            </FormButton>
+          </ContactForm>
+        )}
       </ContactContent>
     </ContactContainer>
   );
 }
-
 export default ContactSection;

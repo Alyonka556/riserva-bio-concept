@@ -32,7 +32,11 @@ i18n.use(initReactI18next).init({
           location: "Dove siamo",
           email: "Email",
           call: "Chiamaci",
-          button: "Contattaci",
+          name: "Nome",
+          message: "Messaggio",
+          submit: "Invia messaggio",
+          success: "Messaggio inviato con successo!",
+          error: "Si è verificato un errore. Riprova più tardi.",
         },
         company: {
           title: "La nostra azienda",
@@ -77,7 +81,11 @@ i18n.use(initReactI18next).init({
           location: "Where to find us",
           email: "Email",
           call: "Call us",
-          button: "Contact us",
+          name: "Name",
+          message: "Message",
+          submit: "Send message",
+          success: "Message sent successfully!",
+          error: "Something went wrong. Please try again later.",
         },
         company: {
           title: "Our company",
@@ -125,7 +133,12 @@ i18n.use(initReactI18next).init({
           location: "Wo Sie uns finden",
           email: "E-Mail",
           call: "Rufen Sie uns an",
-          button: "Kontaktieren Sie uns",
+          name: "Name",
+          message: "Nachricht",
+          submit: "Nachricht senden",
+          success: "Nachricht erfolgreich gesendet!",
+          error:
+            "Etwas ist schiefgelaufen. Bitte versuchen Sie es später erneut.",
         },
 
         company: {
@@ -176,7 +189,11 @@ i18n.use(initReactI18next).init({
           location: "Où nous trouver",
           email: "E-mail",
           call: "Appelez-nous",
-          button: "Contactez-nous",
+          name: "Nom",
+          message: "Message",
+          submit: "Envoyer le message",
+          success: "Message envoyé avec succès !",
+          error: "Une erreur s’est produite. Veuillez réessayer plus tard.",
         },
 
         company: {

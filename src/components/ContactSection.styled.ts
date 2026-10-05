@@ -112,16 +112,68 @@ export const ContactPhone = styled.a`
   }
 `;
 
-export const ContactButton = styled.a`
-  display: inline-block;
-  margin-top: 32px;
+export const ContactForm = styled.form`
+  max-width: 600px;
+  margin: 48px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+`;
+
+export const FormLabel = styled.label`
+  text-align: left;
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f2a1f;
+`;
+
+export const FormInput = styled.input`
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #c9c6bb;
+  border-radius: 6px;
+  background-color: white;
+  color: #1f2a1f;
+  font-size: 16px;
+  font-family: inherit;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+    border-color: #556b2f;
+  }
+`;
+
+export const FormTextarea = styled.textarea`
+  width: 100%;
+  min-height: 140px;
+  padding: 14px 16px;
+  border: 1px solid #c9c6bb;
+  background-color: white;
+  color: #1f2a1f;
+  font-size: 16px;
+  font-family: inherit;
+  line-height: 1.5;
+  resize: vertical;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+    border-color: #556b2f;
+  }
+`;
+
+export const FormButton = styled.button`
+  align-self: center;
   padding: 14px 28px;
+  border: none;
+  border-radius: 6px;
   background-color: #556b2f;
   color: white;
-  text-decoration: none;
-  border-radius: 6px;
   font-size: 16px;
   font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
   transition: background-color 0.2s ease;
 
   &:hover {
@@ -132,4 +184,17 @@ export const ContactButton = styled.a`
     outline: 3px solid #556b2f;
     outline-offset: 3px;
   }
+`;
+
+export const SuccessMessage = styled.p`
+  max-width: 600px;
+  margin: 48px auto 0;
+  padding: 20px 24px;
+  border: 1px solid #a8b58a;
+  border-radius: 6px;
+  background-color: #f2f4ec;
+  color: #3f5222;
+  font-size: 17px;
+  font-weight: 600;
+  text-align: center;
 `;
