@@ -5,7 +5,7 @@ export const ContactContainer = styled.section`
   background-color: #faf8f2;
 
   @media screen and (max-width: 768px) {
-    padding: 60px 20px;
+    padding: 40px 20px;
   }
 `;
 
@@ -138,8 +138,9 @@ export const FormInput = styled.input`
   font-family: inherit;
   box-sizing: border-box;
 
-  &:focus {
-    outline: none;
+  &:focus-visible {
+    outline: 2px solid #556b2f;
+    outline-offset: 2px;
     border-color: #556b2f;
   }
 `;
@@ -149,6 +150,7 @@ export const FormTextarea = styled.textarea`
   min-height: 140px;
   padding: 14px 16px;
   border: 1px solid #c9c6bb;
+  border-radius: 6px;
   background-color: white;
   color: #1f2a1f;
   font-size: 16px;
@@ -157,8 +159,9 @@ export const FormTextarea = styled.textarea`
   resize: vertical;
   box-sizing: border-box;
 
-  &:focus {
-    outline: none;
+  &:focus-visible {
+    outline: 2px solid #556b2f;
+    outline-offset: 2px;
     border-color: #556b2f;
   }
 `;

@@ -5,6 +5,7 @@ import {
   HeaderContainer,
   Navigation,
   Logo,
+  LogoImage,
   NavLink,
   MenuButton,
   LanguageSwitcher,
@@ -23,6 +24,7 @@ function Header() {
   return (
     <HeaderContainer>
       <Logo href="/" aria-label="La Riserva Bio - Home">
+        <LogoImage src="./public/favicon-olive.svg" alt="" />
         La Riserva Bio
       </Logo>
 

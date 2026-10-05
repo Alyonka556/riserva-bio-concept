@@ -7,6 +7,11 @@ export const HeaderContainer = styled.header`
   align-items: center;
   gap: 32px;
   padding: 24px 48px;
+
+  @media screen and (max-width: 480px) {
+    padding: 20px 24px;
+    gap: 16px;
+  }
 `;
 
 export const Navigation = styled.nav<{ $isOpen: boolean }>`
@@ -18,23 +23,43 @@ export const Navigation = styled.nav<{ $isOpen: boolean }>`
     display: ${({ $isOpen }) => ($isOpen ? "flex" : "none")};
 
     flex-direction: column;
-    gap: 14px;
+    gap: 10px;
     position: absolute;
     top: 100%;
     left: 0;
     z-index: 100;
     width: 100%;
-    padding: 18px 24px;
+    padding: 12px 24px 16px;
 
     background-color: white;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   }
 `;
 
 export const Logo = styled.a`
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  white-space: nowrap;
   font-size: 24px;
   font-weight: 600;
   text-decoration: none;
   color: #1f2d1f;
+
+  @media screen and (max-width: 480px) {
+    font-size: 20px;
+  }
+`;
+
+export const LogoImage = styled.img`
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+
+  @media screen and (max-width: 480px) {
+    width: 32px;
+    height: 32px;
+  }
 `;
 
 export const NavLink = styled.a`

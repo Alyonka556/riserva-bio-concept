@@ -17,7 +17,7 @@ export const TerritoryContent = styled.div`
 
   @media screen and (max-width: 1024px) {
     flex-direction: column;
-    gap: 40px;
+    gap: 28px;
   }
 `;
 
