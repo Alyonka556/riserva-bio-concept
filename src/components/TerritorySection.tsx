@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
 
-import territoryOlive from "../assets/territory.webp";
+import territoryOlive480 from "../assets/territory-480.webp";
+import territoryOlive768 from "../assets/territory-768.webp";
+import territoryOlive1200 from "../assets/territory-1200.webp";
 
 import {
   TerritoryContainer,
@@ -22,7 +24,15 @@ function TerritorySection() {
           <TerritoryText>{t("territory.text")}</TerritoryText>
         </TerritoryInfo>
         <TerritoryImage
-          src={territoryOlive}
+          src={territoryOlive1200}
+          srcSet={`
+    ${territoryOlive480} 480w,
+    ${territoryOlive768} 768w,
+    ${territoryOlive1200} 1200w
+  `}
+          sizes="(max-width: 768px) 100vw, 50vw"
+          loading="lazy"
+          decoding="async"
           alt="Olivetto biologico nel territorio di Tuscania"
         />
       </TerritoryContent>

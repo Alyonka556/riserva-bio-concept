@@ -1,19 +1,44 @@
 import styled from "styled-components";
 
-export const HeroSection = styled.section<{ $backgroundImage: string }>`
-  text-align: center;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url(${({ $backgroundImage }) => $backgroundImage});
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+export const HeroSection = styled.section`
+  position: relative;
+  min-height: 480px;
+  overflow: hidden;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   padding: 120px 20px;
+  box-sizing: border-box;
 
   @media screen and (max-width: 768px) {
+    min-height: 400px;
     padding: 80px 20px;
   }
 `;
+
+export const HeroImage = styled.img`
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+`;
+
+export const HeroOverlay = styled.div`
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+`;
+
+export const HeroContent = styled.div`
+  position: relative;
+  z-index: 1;
+  text-align: center;
+`;
+
 export const HeroTitle = styled.h1`
   font-size: 48px;
   font-weight: 600;
