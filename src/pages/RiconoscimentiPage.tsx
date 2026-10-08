@@ -51,7 +51,7 @@ function RiconoscimentiPage() {
         <FeaturedAwardCard>
           <AwardLogo
             src={oriiLogo}
-            alt=""
+            alt="Logo Orii del Lazio"
             width={200}
             height={200}
             style={{ height: "100px" }}
@@ -67,13 +67,23 @@ function RiconoscimentiPage() {
 
         <AwardsGrid>
           <AwardCard>
-            <AwardLogo src={lionsLogo} alt="Lions International" />
+            <AwardLogo
+              src={lionsLogo}
+              alt="Lions International"
+              width={200}
+              height={200}
+            />
             <AwardCardYear>2024</AwardCardYear>
             <AwardCardTitle>Olio Novo Lions</AwardCardTitle>
           </AwardCard>
 
           <AwardCard>
-            <AwardLogo src={slowFoodLogo} alt="" />
+            <AwardLogo
+              src={slowFoodLogo}
+              alt="Logo Slow Food"
+              width={200}
+              height={149}
+            />
             <AwardCardYear>2023</AwardCardYear>
             <AwardCardTitle>
               Grande Olio Slow — Guida agli Extravergini
@@ -81,7 +91,12 @@ function RiconoscimentiPage() {
           </AwardCard>
 
           <AwardCard>
-            <AwardLogo src={oriiLogo} alt="" />
+            <AwardLogo
+              src={oriiLogo}
+              alt="Logo Orii del Lazio"
+              width={200}
+              height={200}
+            />
             <AwardCardYear>2021</AwardCardYear>
             <AwardCardTitle>
               Orii del Lazio — {t("awards.secondPrize")}
@@ -89,7 +104,12 @@ function RiconoscimentiPage() {
           </AwardCard>
 
           <AwardCard>
-            <AwardLogo src={gamberoRossoLogo} alt="" />
+            <AwardLogo
+              src={gamberoRossoLogo}
+              alt="Logo Gambero Rosso"
+              width={200}
+              height={200}
+            />
             <AwardCardYear>2020</AwardCardYear>
             <AwardCardTitle>Oli d'Italia — Gambero Rosso</AwardCardTitle>
           </AwardCard>
@@ -101,7 +121,12 @@ function RiconoscimentiPage() {
           </AwardCard>
 
           <AwardCard>
-            <AwardLogo src={aipoLogo} alt="" />
+            <AwardLogo
+              src={aipoLogo}
+              alt="Logo AIPO d'Argento"
+              width={200}
+              height={200}
+            />
             <AwardCardYear>2018</AwardCardYear>
             <AwardCardTitle>
               Aipo d'argento — {t("awards.internationalCompetition")}
@@ -109,13 +134,23 @@ function RiconoscimentiPage() {
           </AwardCard>
 
           <AwardCard>
-            <AwardLogo src={oriiLogo} alt="" />
+            <AwardLogo
+              src={oriiLogo}
+              alt="Logo Orii del Lazio"
+              width={200}
+              height={200}
+            />
             <AwardCardYear>2017</AwardCardYear>
             <AwardCardTitle>Orii del Lazio</AwardCardTitle>
           </AwardCard>
 
           <AwardCard>
-            <AwardLogo src={goldMedalLogo} alt="" />
+            <AwardLogo
+              src={goldMedalLogo}
+              alt="Medaglia d'oro BiolNovello"
+              width={200}
+              height={200}
+            />
             <AwardCardYear>2016</AwardCardYear>
             <AwardCardTitle>BiolNovello — Gold Medal</AwardCardTitle>
           </AwardCard>
