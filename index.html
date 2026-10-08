@@ -20,6 +20,21 @@
   <meta property="og:url" content="https://alyonka556.github.io/riserva-bio-concept/" />
   <meta property="og:image" content="https://alyonka556.github.io/riserva-bio-concept/og-image.webp" />
   <title>La Riserva Bio | Olio Extra Vergine di Oliva Biologico</title>
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const redirect = params.get("redirect");
+
+    if (redirect !== null) {
+      const base = "/riserva-bio-concept/";
+      const route = redirect.replace(/^\/+/, "");
+
+      window.history.replaceState(
+        null,
+        "",
+        base + route
+      );
+    }
+  </script>
 </head>
 
 <body>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+        const base = "/riserva-bio-concept/";
+        const path = window.location.pathname;
+
+        if (path.startsWith(base)) {
+            const route = path.slice(base.length);
+            const target =
+                base +
+                "?redirect=" +
+                encodeURIComponent(route + window.location.search + window.location.hash);
+
+            window.location.replace(target);
+        }
+    </script>
+</head>
+
+<body></body>
+
+</html>
