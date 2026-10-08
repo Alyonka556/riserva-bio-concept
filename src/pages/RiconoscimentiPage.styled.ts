@@ -134,10 +134,18 @@ export const AwardCard = styled.article`
   border: 1px solid #d9ddce;
   border-radius: 10px;
   background-color: #fff;
+  text-align: center;
 
   @media screen and (max-width: 480px) {
     padding: 22px 20px;
   }
+`;
+export const AwardLogo = styled.img`
+  display: block;
+  width: auto;
+  height: 80px;
+  object-fit: contain;
+  margin: 0 auto 20px;
 `;
 
 export const AwardCardYear = styled.p`

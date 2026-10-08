@@ -1,3 +1,9 @@
+import aipoLogo from "../assets/awards/aipo.png";
+import gamberoRossoLogo from "../assets/awards/gambero-rosso.png";
+import goldMedalLogo from "../assets/awards/gold-medal.png";
+import lionsLogo from "../assets/awards/lions.png";
+import oriiLogo from "../assets/awards/orii-del-lazio.png";
+import slowFoodLogo from "../assets/awards/slow-food.png";
 import { useTranslation } from "react-i18next";
 
 import {
@@ -9,6 +15,7 @@ import {
   AwardsIntro,
   FeaturedAward,
   FeaturedAwardCard,
+  AwardLogo,
   AwardYear,
   AwardName,
   AwardResult,
@@ -42,6 +49,13 @@ function RiconoscimentiPage() {
       </AwardsHero>
       <FeaturedAward>
         <FeaturedAwardCard>
+          <AwardLogo
+            src={oriiLogo}
+            alt=""
+            width={200}
+            height={200}
+            style={{ height: "100px" }}
+          />
           <AwardYear>2025</AwardYear>
           <AwardName>Orii del Lazio</AwardName>
           <AwardResult>{t("awards.firstPrize")}</AwardResult>
@@ -53,11 +67,13 @@ function RiconoscimentiPage() {
 
         <AwardsGrid>
           <AwardCard>
+            <AwardLogo src={lionsLogo} alt="Lions International" />
             <AwardCardYear>2024</AwardCardYear>
             <AwardCardTitle>Olio Novo Lions</AwardCardTitle>
           </AwardCard>
 
           <AwardCard>
+            <AwardLogo src={slowFoodLogo} alt="" />
             <AwardCardYear>2023</AwardCardYear>
             <AwardCardTitle>
               Grande Olio Slow — Guida agli Extravergini
@@ -65,6 +81,7 @@ function RiconoscimentiPage() {
           </AwardCard>
 
           <AwardCard>
+            <AwardLogo src={oriiLogo} alt="" />
             <AwardCardYear>2021</AwardCardYear>
             <AwardCardTitle>
               Orii del Lazio — {t("awards.secondPrize")}
@@ -72,16 +89,19 @@ function RiconoscimentiPage() {
           </AwardCard>
 
           <AwardCard>
+            <AwardLogo src={gamberoRossoLogo} alt="" />
             <AwardCardYear>2020</AwardCardYear>
             <AwardCardTitle>Oli d'Italia — Gambero Rosso</AwardCardTitle>
           </AwardCard>
 
           <AwardCard>
+            <AwardLogo src={goldMedalLogo} alt="" />
             <AwardCardYear>2020</AwardCardYear>
             <AwardCardTitle>BiolNovello — Gold Medal</AwardCardTitle>
           </AwardCard>
 
           <AwardCard>
+            <AwardLogo src={aipoLogo} alt="" />
             <AwardCardYear>2018</AwardCardYear>
             <AwardCardTitle>
               Aipo d'argento — {t("awards.internationalCompetition")}
@@ -89,11 +109,13 @@ function RiconoscimentiPage() {
           </AwardCard>
 
           <AwardCard>
+            <AwardLogo src={oriiLogo} alt="" />
             <AwardCardYear>2017</AwardCardYear>
             <AwardCardTitle>Orii del Lazio</AwardCardTitle>
           </AwardCard>
 
           <AwardCard>
+            <AwardLogo src={goldMedalLogo} alt="" />
             <AwardCardYear>2016</AwardCardYear>
             <AwardCardTitle>BiolNovello — Gold Medal</AwardCardTitle>
           </AwardCard>
